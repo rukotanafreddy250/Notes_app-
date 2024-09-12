@@ -1,0 +1,17 @@
+{
+  "name": "notes_app",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server --port=3002 --watch=\".\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Freddy",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "marked": "^14.1.2"
+  }
+}
