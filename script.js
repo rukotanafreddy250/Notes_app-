@@ -23,7 +23,7 @@ function addNewNote(text = '') {
     <div class="main ${text ? '' : 'hidden'}"></div>
     <textarea class="${
       text ? 'hidden' : ''
-    }" name="noteContent" id="textArea"></textarea>
+    }" name="noteContent" id="textArea" placeholde=" type something..."></textarea>
     `;
 
   const editBtn = note.querySelector('.edit');
@@ -36,6 +36,7 @@ function addNewNote(text = '') {
 
   deleteBtn.addEventListener('click', () => {
     note.remove();
+    updateLS();
   });
   editBtn.addEventListener('click', () => {
     main.classList.toggle('hidden');
