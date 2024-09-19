@@ -4,8 +4,8 @@ const notes = JSON.parse(localStorage.getItem('Notes')) || [];
 
 console.log(notes);
 
-if(notes) {
-    notes.forEach( note => addNewNote(note))
+if (notes) {
+  notes.forEach((note) => addNewNote(note));
 }
 
 addBtn.addEventListener('click', () => addNewNote());
@@ -23,7 +23,7 @@ function addNewNote(text = '') {
     <div class="main ${text ? '' : 'hidden'}"></div>
     <textarea class="${
       text ? 'hidden' : ''
-    }" name="noteContent" id="textArea" placeholde=" type something..."></textarea>
+    }" name="noteContent" id="textArea" placeholder="type something..."></textarea>
     `;
 
   const editBtn = note.querySelector('.edit');
